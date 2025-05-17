@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "examius"
+version = "0.1.0"
+description = ""
+authors = ["Alexander <alexandervolzhanin2004@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+wget = "^3.2"
+langchain = "^0.3.25"
+langchain-community = "^0.3.24"
+beautifulsoup4 = "^4.13.4"
+lxml = "^5.4.0"
+langchain-openai = "^0.3.17"
+qdrant-client = "^1.14.2"
+pypdf = "^5.5.0"
+langgraph = "^0.4.5"
+pymupdf = "^1.25.5"
+unstructured = "^0.17.2"
+libmagic = "^1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

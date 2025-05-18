@@ -31,10 +31,10 @@ mkdir data_for_rag
 
 2. Создайте файл `.env` в корне директории и добавьте необходимые переменные окружения:
 
-   ```
-   OPENAI_API_KEY="your_openai_api_key"
-   PROXY="your_proxy_url" (опционально)
-   ```
+```
+OPENAI_API_KEY="your_openai_api_key"
+PROXY="your_proxy_url" (опционально)
+```
 
 ## Использование
 

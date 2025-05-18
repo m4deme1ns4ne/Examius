@@ -25,7 +25,7 @@ class IMemoryStorage(ABC):
 
 
 class MemoryManager(IMemoryStorage):
-    """Получение сообщений пользователя, ответа LLM и метаданные при поиске похожих эмбиндингов в RAG"""
+    """Получение сообщений пользователя, ответа LLM при поиске похожих эмбиндингов в RAG"""
 
     def __init__(self):
         self.memory_list = []
@@ -33,13 +33,7 @@ class MemoryManager(IMemoryStorage):
     def add_interaction(self, question: str, answer: str) -> None:
         while len(self.memory_list) > 10:
             self.memory_list.pop(0)
-        self.memory_list.append(
-            (
-                {"user": question},
-                {"llm": answer["result"]},
-                {"source_documents": answer["source_documents"]},
-            )
-        )
+        self.memory_list.append(({"user": question}, {"llm": answer["result"]}))
 
     def get_history(self) -> list:
         return self.memory_list

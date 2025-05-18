@@ -1921,6 +1921,16 @@ files = [
 ]
 
 [[package]]
+name = "logger"
+version = "1.4"
+description = "Python logging helper"
+optional = false
+python-versions = "*"
+files = [
+    {file = "logger-1.4.tar.gz", hash = "sha256:4ecac57133c6376fa215f0fe6b4dc4d60e4d1ad8be005cab4e8a702df682f8b3"},
+]
+
+[[package]]
 name = "loguru"
 version = "0.7.3"
 description = "Python logging made (stupidly) simple"
@@ -5630,4 +5640,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "b7263d8bb0a4ac780fa6b582978d66fdde4b33bb78a3bfc4f1458fc50e66acea"
+content-hash = "e57a28581ef60956f5c5af2121aec8bcf01860f6dd484df180b7d1357d3e6377"
